@@ -37,9 +37,9 @@ class Program
 		string email = System.Console.ReadLine();
 
 		Console.WriteLine("Your full name is "+ firstName +" "+ middleInitial +" "+ lastName + ".");
-		Console.WriteLine("Your full name is "+ address +".");
-		Console.WriteLine("Your full name is "+ phone +".");
-		Console.WriteLine("Your full name is "+ email +".");
+		Console.WriteLine("Your address is "+ address +".");
+		Console.WriteLine("Your phone is "+ phone +".");
+		Console.WriteLine("Your email is "+ email +".");
 
 		Console.WriteLine("Is this information correct? [Enter 'Y' for yes and any other key for 'No'.");
 		string confirmation = System.Console.ReadLine();

@@ -33,31 +33,42 @@ class Program
 {
 	static void Main(string[] args)
 	{
-		Console.WriteLine("Please enter your first name.");
-		string firstName = System.Console.ReadLine();
 
-		Console.WriteLine("Please enter your middle initial.");
-		string middleInitial = System.Console.ReadLine();
+		while(true)
+		{
+			Console.WriteLine("Please enter your first name.");
+			string firstName = System.Console.ReadLine();
 
-		Console.WriteLine("Please enter your last name.");
-		string lastName = System.Console.ReadLine();
+			Console.WriteLine("Please enter your middle initial.");
+			string middleInitial = System.Console.ReadLine();
 
-		Console.WriteLine("Please enter your address.");
-		string address = System.Console.ReadLine();
+			Console.WriteLine("Please enter your last name.");
+			string lastName = System.Console.ReadLine();
 
-		Console.WriteLine("Please enter your phone number.");
-		string phone = System.Console.ReadLine();
+			Console.WriteLine("Please enter your address.");
+			string address = System.Console.ReadLine();
 
-		Console.WriteLine("Please enter your email.");
-		string email = System.Console.ReadLine();
+			Console.WriteLine("Please enter your phone number.");
+			string phone = System.Console.ReadLine();
 
-		Console.WriteLine("Your full name is "+ firstName +" "+ middleInitial +" "+ lastName + ".");
-		Console.WriteLine("Your full name is "+ address +".");
-		Console.WriteLine("Your full name is "+ phone +".");
-		Console.WriteLine("Your full name is "+ email +".");
+			Console.WriteLine("Please enter your email.");
+			string email = System.Console.ReadLine();
 
-		Console.WriteLine("Is this information correct? [Enter 'Y' for yes and any other key for 'No'.");
-		string confirmation = System.Console.ReadLine();
+			Console.WriteLine("Is your information correct? [Enter 'Y' for yes.]");
+			var confirmation = System.Console.ReadLine();
+
+			if (confirmation == "Y"){
+				Console.WriteLine("Your full name is "+ firstName +" "+ middleInitial +" "+ lastName + ".");
+				Console.WriteLine("Your address is "+ address +".");
+				Console.WriteLine("Your phone number is "+ phone +".");
+				Console.WriteLine("Your email is  "+ email +".");
+				break;
+			}
+				
+		}
+		
+
+
 	}
 	
 }
